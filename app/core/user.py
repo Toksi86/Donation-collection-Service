@@ -51,8 +51,7 @@ class UserManager(IntegerIDMixin, BaseUserManager[User, int]):
     async def on_after_register(
             self, user: User, request: Optional[Request] = None
     ):
-        # Вместо print здесь можно настроить отправку письма.
-        print(f'Пользователь {user.email} зарегистрирован.')
+        ...
 
 
 async def get_user_manager(user_db=Depends(get_user_db)):

@@ -38,6 +38,6 @@ async def get_report(
         wrapper_services
     )
 
-    return {"message": "Отчет успешно создан",
-            'spreadsheetid': "https://docs.google.com/spreadsheets/d/"
-            f"{spreadsheetid}/edit#gid=0"}
+    return {'message': 'Отчет успешно создан',
+            'spreadsheetid': 'https://docs.google.com/spreadsheets/d/'
+            f'{spreadsheetid}/edit#gid=0'}

@@ -21,8 +21,8 @@ class CRUDCharityProject(CRUDBase):
         )).scalars().first()
 
     async def get_projects_by_completion_rate(
-            self,
-            session: AsyncSession
+        self,
+        session: AsyncSession
     ) -> list[CharityProject]:
         query = (
             select(CharityProject)

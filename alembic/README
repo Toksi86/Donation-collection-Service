@@ -1,1 +1,8 @@
-Generic single-database configuration with an async dbapi.
+Для запуска миграций небходимо:
+
+- Установить зависимости из requirements.txt 
+- Запустить команду:
+
+```bash
+alembic upgrade head
+```
